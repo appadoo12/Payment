@@ -249,7 +249,8 @@ body {
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <div class="btn btn-primary w-100" id="goBackLink">Sumbit</div>
+                                                <div class="btn btn-primary w-100" onclick="window
+                                                .close()" >Sumbit</div>
                                             </div>
                                         </div>
                                     </form>
@@ -259,23 +260,11 @@ body {
                     </div>
                 </div>
             </div>
-           
+            <div class="col-12">
+              
+            </div>
         </div>
     </div>
 </body>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  var goBackLink = document.getElementById("goBackLink");
 
-  // Add a click event listener to the link
-  goBackLink.addEventListener("click", function(event) {
-    event.preventDefault(); // Prevent the link from navigating immediately
-
-    var previousPageUrl = document.referrer;
-
-    // Redirect the user to the previous page
-    window.location.href = previousPageUrl;
-  });
-});
-</script>
 </html>
